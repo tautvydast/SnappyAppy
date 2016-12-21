@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tautvydas.snappyappy.LoginActivity"
+    android:background="@color/backgroundColor">
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="131dp"
+        android:id="@+id/editText2"
+        android:hint="Email address"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="sans-serif"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <FrameLayout
+        android:id="@+id/frameRegisterButton"
+        android:layout_height="100dp"
+        android:layout_width="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/register"
+            android:id="@+id/imageView2"
+            android:onClick="startRegisterActivity"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameOkLogin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/go"
+            android:id="@+id/imageView6"
+            android:onClick="loginAction"/>
+    </FrameLayout>
+</RelativeLayout>

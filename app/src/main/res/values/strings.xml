@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Snappy Appy</string>
+    <string name="friends_snaps_title">Friends and snaps</string>
+    <string name="settings_title">Settings</string>
+    <string name="camera_title">Snap</string>
+    <string name="register_title">Register</string>
+    <string name="snaps_title">Snaps</string>
+    <string name="friend_list_title">Friend list</string>
+    <string name="add_friend_title">Add friend</string>
+</resources>
